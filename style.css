@@ -3,6 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+    transition: 0.5s;
+
+    background-color: var(--bg-color);
+    color: var(--color);
+
 }
 
 :root {
@@ -24,7 +30,7 @@
 
     font-family: 'Comme',sans-serif;
 
-    color: #000000;
+    transition: 0.5s;
 }
 
 header {
@@ -35,10 +41,9 @@ header {
 
 .themeChangerButton {
 
-    background-color: var(--bg-color);
-    color: var(--color);
-
     font-weight: 550;
+
+    transition: 0s;
 
     height: 2.5rem;
 
@@ -62,7 +67,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    height: 100%;
+
     gap: 2rem;
 }
 
@@ -79,8 +84,6 @@ main span {
     height: 2.8rem;
     width: 25rem;
 
-    background-color: var(--bg-color);
-
     font-size: medium;
     font-weight: 550;
 
@@ -92,6 +95,8 @@ main span {
 
     height: 2.8rem;
     width: 2.8rem;
+
+    transition: 0s;
 
     font-weight: 550;
     font-size: medium;
@@ -116,9 +121,10 @@ main ul {
     gap: 1.2rem;
 }
 
-main ul > li{
+main ul > li {
+
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: start;
 
     font-size: medium;
@@ -127,10 +133,32 @@ main ul > li{
     width: 100%;
 }
 
+.removeButton {
+
+    padding: 1%;
+
+    border-radius: 0.4rem;
+    border: 0.125rem solid var(--color);
+
+    transition: 0s;
+
+    cursor: pointer;
+}
+
+.removeButton:hover {
+
+    background-color: var(--color);
+    color: var(--bg-color);
+} 
+
+
 footer {
 
     display: flex;
     justify-content: center;
+    align-items: end;
+
+    height: 100%;
 
     font-size: medium;
     font-weight: 550;
