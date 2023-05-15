@@ -96,8 +96,6 @@ main span {
     height: 2.8rem;
     width: 2.8rem;
 
-    transition: 0s;
-
     font-weight: 550;
     font-size: medium;
 
@@ -109,6 +107,7 @@ main span {
 
 .addMainButton:hover {
 
+    transition: 0s;
     background-color: var(--color);
     color: var(--bg-color);
 }
@@ -140,7 +139,7 @@ main ul > li {
     border-radius: 0.4rem;
     border: 0.125rem solid var(--color);
 
-    transition: 0s;
+    transition: 0.5s;
 
     cursor: pointer;
 }
@@ -149,6 +148,8 @@ main ul > li {
 
     background-color: var(--color);
     color: var(--bg-color);
+
+    transition: 0s;
 } 
 
 
